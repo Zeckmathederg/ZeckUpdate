@@ -4,7 +4,7 @@ This executable is meant to be ran on Linux, most distros will work fine granted
 g++ must also be installed for compiling to work.
 
 # File structure and compiling process
-updates and ZeckUpdate
+updates and ZeckUpdate.
 ZeckUpdate contains all the source code, licensing, and README.md.
 updates: no file has to be entered in the folder; update.txt will be created automatically by executabale.
 bin contains the executable.
