@@ -4,19 +4,19 @@ This executable is meant to be ran on Linux, most distros will work fine granted
 g++ must also be installed for compiling to work.
 
 # File structure and compiling process
-updates     src       bin
-src contains all the source code, licensing, and README.md.
+updates and ZeckUpdate
+ZeckUpdate contains all the source code, licensing, and README.md.
 updates: no file has to be entered in the folder; update.txt will be created automatically by executabale.
 bin contains the executable.
 # To compile
 # (1).
-Create the file structure: updates, and src. bin is not necassary for the executable to function, but is recommended.
+Create the updates folder
 # (2).
-git clone into the src folder created.
+git clone into whatever folder you want the application file system to start. The result should be updates and ZeckUpdate folders.
 # (3). 
-Provided that g++ is already installed while in src directory: g++ -o ./ZeckUpdate main.cpp prompts.cpp prompts.hpp
+Provided that g++ is already installed while in ZeckUpdate directory: g++ -o ./ZeckUpdate main.cpp prompts.cpp prompts.hpp
 # (4).
-To run the application, move the executable to wherever you feel fit as long as it is in a folder aligned with src and updates. Running in src also functions.
+To run the application, move the executable to wherever you feel fit as long as it is in a folder aligned with ZeckUpdate and updates. Running in ZeckUpdate also functions.
 Next: ./ZeckUpdate
 The file creation process shall be working just fine and you should be prompted.
 # (5).
