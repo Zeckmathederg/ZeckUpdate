@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <unistd.h>
+#include <string.h>
 #include <sys/types.h>
 #include <pwd.h>
 #include "prompts.h"
@@ -10,8 +11,9 @@ int main() {
 	FILE *filepath;
 	remove(*homedir + "/.zeckupdate/update.txt");
 	filepath = fopen(*homedir + "/.zeckupdate/update.txt", "w");
+	printf("%s\n", homedir);
 	if (filepath == NULL) {
-		//printf("File not found or cannot be written to\n");
+		perror("");
 		return 1;
 	}
 	/*
@@ -20,6 +22,5 @@ int main() {
 		return 0;
 	}
 	*/
-	printf(homedir, "%s");
 	return 0;
 }
