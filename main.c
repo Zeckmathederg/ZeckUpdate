@@ -7,7 +7,7 @@
 // main.c, main function
 int main() {
 	const char *homedir = getenv("HOME");
-	char dir[200]; char dirstr[35] = "/.zeckupdate/update.txt";
+	char dir[200]; char dirstr[23] = "/.zeckupdate/update.txt";
 	strcpy(dir, homedir); strcat(dir, dirstr);
 	printf("%s\n",dir);
 	FILE *filepath;
@@ -16,5 +16,8 @@ int main() {
 		perror("");
 		return 1;
 	}
+
+
+	// fprintf(filepath, "formattypes", precedingtext, valuetobeprinted);
 	return 0;
 }
