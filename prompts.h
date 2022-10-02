@@ -1,3 +1,2 @@
-// prompts.h, extern declare prompts
-extern char prompts[];
-extern char inparr[];
+extern char prompts[][50];
+extern char inparr[][200];
