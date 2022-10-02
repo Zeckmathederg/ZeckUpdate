@@ -7,8 +7,11 @@
 // main.c, main function
 int main() {
 	const char *homedir = getenv("HOME");
+	char dir[200]; char dirstr[35] = "/.zeckupdate/update.txt";
+	strcpy(dir, homedir); strcat(dir, dirstr);
+	printf("%s\n",dir);
 	FILE *filepath;
-	filepath = fopen((int) *homedir + "/.zeckupdate/update.txt", "w");
+	filepath = fopen(dir, "w");
 	if (filepath == NULL) {
 		perror("");
 		return 1;
