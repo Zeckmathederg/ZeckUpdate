@@ -19,8 +19,6 @@ int main() {
 		scanf("%s",inparr[i]);
 		// To add slight delay for minimal breakage.
 		printf("");
-	}
-	for (int i = 0; i<13; i++){
 		fprintf(filepath, "%s%s\n", prompts[i], inparr[i]);	
 	}
 	return 0;
