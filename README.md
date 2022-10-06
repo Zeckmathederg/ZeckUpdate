@@ -6,7 +6,7 @@ This is meant to be compiled on Linux. To install, enter the folder of the sourc
 
 # How does this work?
 Installing the application creates a folder in the home user directory, often represented with '~', the folder named .zeckupdate with a file inside called update.txt. Running zeckupdate will result in 13 prompts, each asking for user input. These are simple questions. After the 13 prompts, the program terminates and all info is written to update.txt in this format:
-<prompt> <userinput>
-<prompt2> <userinput2>
+[prompt] [userinput]
+[prompt2] [userinput2]
 . . .
  
