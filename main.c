@@ -16,9 +16,7 @@ int main() {
 	}
 	for(int i=0; i<13; i++) {
 		printf("%s",prompts[i]);
-		scanf("%s",inparr[i]);
-		// To add slight delay for minimal breakage.
-		printf("");
+		fgets(inparr[i],sizeof inparr[i],stdin);
 		fprintf(filepath, "%s%s\n", prompts[i], inparr[i]);	
 	}
 	return 0;
