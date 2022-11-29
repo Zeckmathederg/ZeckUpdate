@@ -10,13 +10,16 @@ int main() {
 	strcpy(dir, homedir); strcat(dir, dirstr);
 	FILE *filepath;
 	filepath = fopen(dir, "w");
-	if (filepath == NULL) {
+	if(filepath == NULL) {
 		perror("");
 		return 1;
 	}
 	for(int i=0; i<13; i++) {
 		printf("%s",prompts[i]);
-		fgets(inparr[i],sizeof inparr[i],stdin);
+		if(fgets(inparr[i],sizeof inparr[i],stdin) == NULL) {
+			printf("Error fetching...\n");
+			return 1;
+		}
 		fprintf(filepath, "%s%s\n", prompts[i], inparr[i]);	
 	}
 	return 0;
